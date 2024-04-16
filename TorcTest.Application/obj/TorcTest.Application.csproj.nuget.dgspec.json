@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {}
+    "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {}
   },
   "projects": {
-    "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
+    "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
+        "projectUniqueName": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
         "projectName": "TorcTest.Application",
-        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
+        "projectPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
         "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
-        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\obj\\",
+        "outputPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio\\shared\\NuGetPackages"
@@ -34,8 +34,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
-                "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj"
+              "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
+                "projectPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
+    "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
+        "projectUniqueName": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
         "projectName": "TorcTest.Domain",
-        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
+        "projectPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
         "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
-        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\obj\\",
+        "outputPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Visual Studio\\shared\\NuGetPackages"

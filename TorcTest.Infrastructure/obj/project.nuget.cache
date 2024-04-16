@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9k8YMRKgjVbh3LIB8qTi2pK6KWBxzoRbN7TBF/wSSPtChIYMvO6Tf6v9tjWgc39FMAkEoGfirML/OaIxLBCCnw==",
+  "dgSpecHash": "NCT0jSiz9RQR4EGIrKon89poSraSidgaApUegHkL5WLe7VLgcKUFwRmBEwHo6INFYxvHrwOzH+5l0lPA3JPDeg==",
   "success": true,
-  "projectFilePath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
+  "projectFilePath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

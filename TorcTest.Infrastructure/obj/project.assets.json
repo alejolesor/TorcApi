@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
+      "projectUniqueName": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
       "projectName": "TorcTest.Infrastructure",
-      "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
+      "projectPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
-      "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\obj\\",
+      "outputPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Visual Studio\\shared\\NuGetPackages"
@@ -78,8 +78,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
-              "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj"
+            "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
+              "projectPath": "F:\\academyAlejo\\Test\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj"
             }
           }
         }

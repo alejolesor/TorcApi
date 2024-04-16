@@ -21,3 +21,15 @@ F:\academyAlejo\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.dll
 F:\academyAlejo\TorcApi\TorcTest.Domain\obj\Debug\net8.0\refint\TorcTest.Domain.dll
 F:\academyAlejo\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.pdb
 F:\academyAlejo\TorcApi\TorcTest.Domain\obj\Debug\net8.0\ref\TorcTest.Domain.dll
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\bin\Debug\net8.0\TorcTest.Domain.deps.json
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\bin\Debug\net8.0\TorcTest.Domain.dll
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\bin\Debug\net8.0\TorcTest.Domain.pdb
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.AssemblyInfoInputs.cache
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.AssemblyInfo.cs
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.csproj.CoreCompileInputs.cache
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.sourcelink.json
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.dll
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\refint\TorcTest.Domain.dll
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\TorcTest.Domain.pdb
+F:\academyAlejo\Test\TorcApi\TorcTest.Domain\obj\Debug\net8.0\ref\TorcTest.Domain.dll
