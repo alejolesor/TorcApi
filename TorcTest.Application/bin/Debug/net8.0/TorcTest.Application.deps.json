@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TorcTest.Application/1.0.0": {
+        "dependencies": {
+          "TorcTest.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TorcTest.Application.dll": {}
+        }
+      },
+      "TorcTest.Domain/1.0.0": {
+        "runtime": {
+          "TorcTest.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TorcTest.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TorcTest.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

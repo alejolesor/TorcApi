@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\academyAlejo\\TorcApi\\TorcTest.Api\\TorcTest.Api.csproj": {}
+  },
+  "projects": {
+    "F:\\academyAlejo\\TorcApi\\TorcTest.Api\\TorcTest.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Api\\TorcTest.Api.csproj",
+        "projectName": "TorcTest.Api",
+        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Api\\TorcTest.Api.csproj",
+        "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
+        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Visual Studio\\shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\a.castiblanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/activengage/auth/7c71cb13-fee9-4313-82a1-4e8444a344b1/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj": {
+                "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
+        "projectName": "TorcTest.Application",
+        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj",
+        "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
+        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Visual Studio\\shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\a.castiblanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/activengage/auth/7c71cb13-fee9-4313-82a1-4e8444a344b1/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
+                "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
+        "projectName": "TorcTest.Domain",
+        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\TorcTest.Domain.csproj",
+        "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
+        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Visual Studio\\shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\a.castiblanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/activengage/auth/7c71cb13-fee9-4313-82a1-4e8444a344b1/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
+        "projectName": "TorcTest.Infrastructure",
+        "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\TorcTest.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\a.castiblanco\\.nuget\\packages\\",
+        "outputPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "F:\\Visual Studio\\shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\a.castiblanco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/activengage/auth/7c71cb13-fee9-4313-82a1-4e8444a344b1/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj": {
+                "projectPath": "F:\\academyAlejo\\TorcApi\\TorcTest.Application\\TorcTest.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

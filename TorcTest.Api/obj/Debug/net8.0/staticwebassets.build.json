@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LL1gQAui8flk6F9DKwqq1FXmDQ7GyPbV+PUGYAVfFys=",
+  "Source": "TorcTest.Api",
+  "BasePath": "_content/TorcTest.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
