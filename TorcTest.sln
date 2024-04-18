@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorcTest.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{0D8DF508-0881-422D-BB4E-8E0B244A709E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorcApiTest", "TorcApiTest\TorcApiTest.csproj", "{02D96EDE-2F4A-4B7F-BCDF-41D69CC3132C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D96EDE-2F4A-4B7F-BCDF-41D69CC3132C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D96EDE-2F4A-4B7F-BCDF-41D69CC3132C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D96EDE-2F4A-4B7F-BCDF-41D69CC3132C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D96EDE-2F4A-4B7F-BCDF-41D69CC3132C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

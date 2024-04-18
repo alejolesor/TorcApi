@@ -11,8 +11,10 @@ namespace TorcTest.Application.Repository
     {
         Task<bool> Create(Books books);
 
-        Task<List<Domain.Entities.Books>> GetBooks();
+        Task<List<Books>> GetBooks();
 
         Task<List<string>> GetCategories();
+
+        Task<List<Books>> GetBooksByFilter(string searchBy, string searchValue);
     }
 }

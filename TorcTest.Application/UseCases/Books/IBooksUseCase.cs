@@ -13,5 +13,7 @@ namespace TorcTest.Application.UseCases.Books
         Task<List<Domain.Entities.Books>> GetBooks();
 
         Task<List<string>> GetCategories();
+
+        Task<List<Domain.Entities.Books>> GetBooksByFilter(string searchBy, string searchValue);
     }
 }

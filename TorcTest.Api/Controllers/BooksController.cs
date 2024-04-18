@@ -59,5 +59,14 @@ namespace TorcTest.Api.Controllers
 
         }
 
+        [HttpGet]
+        [Route("getbooks/filter")]
+        public async Task<IActionResult> GetBooksByFilter(string searchBy, string searchValue)
+        {
+            var booksList = await _IbooksUseCase.GetBooksByFilter(searchBy, searchValue);
+            return Ok(booksList);
+
+        }
+
     }
 }

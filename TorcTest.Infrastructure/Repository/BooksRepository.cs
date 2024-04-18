@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
+using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,12 +55,54 @@ namespace TorcTest.Infrastructure.Repository
 
             foreach (var item in books)
             {
-                booksList.Add(new Domain.Entities.Books { BookId = item.Book_Id, Tittle = item.Tittle, FirstName = item.First_Name, 
-                    LastName = item.Last_Name, TotalCopies = item.Total_Copies, CopiesInUse = item.Copies_in_use, Type = item.Type,
-                Isbn = item.Isbn, Category = item.Category});
+                booksList.Add(new Domain.Entities.Books
+                {
+                    BookId = item.Book_Id,
+                    Tittle = item.Tittle,
+                    FirstName = item.First_Name,
+                    LastName = item.Last_Name,
+                    TotalCopies = item.Total_Copies,
+                    CopiesInUse = item.Copies_in_use,
+                    Type = item.Type,
+                    Isbn = item.Isbn,
+                    Category = item.Category
+                });
             }
 
-            return booksList;
+            var sortedList = booksList.OrderByDescending(book => book.BookId).ToList();
+
+            return sortedList;
+        }
+
+        public async Task<List<Domain.Entities.Books>> GetBooksByFilter(string searchBy, string searchValue)
+        {
+            var booksList = new List<Domain.Entities.Books>();
+            var books = await _apiDbContext.Books.ToListAsync();
+
+            if (books == null)
+                return null;
+
+
+            foreach (var item in books)
+            {
+                booksList.Add(new Domain.Entities.Books
+                {
+                    BookId = item.Book_Id,
+                    Tittle = item.Tittle,
+                    FirstName = item.First_Name,
+                    LastName = item.Last_Name,
+                    TotalCopies = item.Total_Copies,
+                    CopiesInUse = item.Copies_in_use,
+                    Type = item.Type,
+                    Isbn = item.Isbn,
+                    Category = item.Category
+                });
+            }
+
+            var filteredBooks = booksList.Where(book => book.GetType().GetProperty(searchBy).GetValue(book, null)?.ToString() == searchValue).
+                ToList().OrderByDescending(book => book.BookId).ToList(); ;
+
+            return filteredBooks;
         }
 
         public async Task<List<string>> GetCategories()

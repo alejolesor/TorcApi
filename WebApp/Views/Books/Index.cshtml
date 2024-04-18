@@ -6,10 +6,49 @@
 
 <h1>Books</h1>
 
+
+
+<br />
+
+
+<h3>Search By</h3>
+
+
+
+<br />
+
+
+
+<form asp-controller="Books" asp-action="Index">
+
+    <select name="searchBy" data-val="true" class="form-select">
+        <option value="">Pick one</option>
+        <option selected="selected" value="Tittle">Tittle</option>
+        <option value="FirstName">Firstname</option>
+        <option value="LastName">LastName</option>
+        <option value="TotalCopies">TotalCopies</option>
+        <option value="CopiesInUse">CopiesInUse</option>
+        <option value="Type">Type</option>
+        <option value="Isbn">IsBn</option>
+        <option value="Category">Category</option>
+
+    </select>
+    <p>
+        <label class="form-label" for="SearchValue">Search Value</label>
+        <input class="form-control" type="text" name="searchValue" value="" />
+        <br />
+        <input class="btn btn-primary" type="submit" value="Filter" />
+    </p>
+</form>
+
+<br />
 <p>
-    <a asp-action="Create">Create New</a>
+    <input class="btn btn-primary" type="button" value="Create" onclick="location.href='@Url.Action("Create", "Books")'" />
 </p>
-<table class="table">
+
+
+
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -40,38 +79,39 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tittle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TotalCopies)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CopiesInUse)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Isbn)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tittle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalCopies)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CopiesInUse)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Isbn)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    <input class="btn btn-primary" type="button" value="Edit" onclick="location.href='@Url.Action("Edit", "Books", new { paramName1 = item.LastName})'" />
+                    <input class="btn btn-info" type="button" value="Details" onclick="location.href='@Url.Action("Details", "Books")'" />
+                    <input class="btn btn-danger" type="button" value="Delete" onclick="location.href='@Url.Action("Delete", "Books")'" />
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
