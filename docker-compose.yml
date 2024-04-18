@@ -1,0 +1,45 @@
+version: '3.4'
+
+
+networks:
+  TorcApi.Api-dev:
+    driver: bridge 
+
+
+services:
+  TorcTest.Api:
+    image: torctest.api:latest
+    depends_on:
+      - "sql-server-db"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"     
+    environment:
+     DatabaseServer: "sql-server-db"
+     Databaseport: "1433"
+     DatabaseUser: "sa"
+     DatabasePassword: "PasswordO1."
+     DatabaseName: "DemoData"
+    networks:
+      - TorcApi.Api-dev  
+      
+  sql-server-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 1433:1433
+    container_name: sqlserver2022
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: PasswordO1.
+      MSSQL_PID: Express
+    volumes:
+        - ../dbscripts/library.sql:/docker-entrypoint-initdb.d/library.sql
+    networks:
+      - TorcApi.Api-dev
+
+
+      
+    
+

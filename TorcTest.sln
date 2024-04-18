@@ -3,21 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorcTest.Api", "TorcTest.Api\TorcTest.Api.csproj", "{04B61615-3EDD-4FB8-9ABC-99275F28F5FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorcTest.Api", "TorcTest.Api\TorcTest.Api.csproj", "{04B61615-3EDD-4FB8-9ABC-99275F28F5FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorcTest.Application", "TorcTest.Application\TorcTest.Application.csproj", "{95929EA0-AE4F-486D-95C4-23219418CDE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorcTest.Application", "TorcTest.Application\TorcTest.Application.csproj", "{95929EA0-AE4F-486D-95C4-23219418CDE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorcTest.Domain", "TorcTest.Domain\TorcTest.Domain.csproj", "{AD796B23-9E7F-47D5-9D15-9ED29C7383FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorcTest.Domain", "TorcTest.Domain\TorcTest.Domain.csproj", "{AD796B23-9E7F-47D5-9D15-9ED29C7383FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorcTest.Infrastructure", "TorcTest.Infrastructure\TorcTest.Infrastructure.csproj", "{EF9BDA88-5EC7-44E3-888F-FEEDFF67ADBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TorcTest.Infrastructure", "TorcTest.Infrastructure\TorcTest.Infrastructure.csproj", "{EF9BDA88-5EC7-44E3-888F-FEEDFF67ADBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{0D8DF508-0881-422D-BB4E-8E0B244A709E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{04B61615-3EDD-4FB8-9ABC-99275F28F5FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,15 @@ Global
 		{EF9BDA88-5EC7-44E3-888F-FEEDFF67ADBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF9BDA88-5EC7-44E3-888F-FEEDFF67ADBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF9BDA88-5EC7-44E3-888F-FEEDFF67ADBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8DF508-0881-422D-BB4E-8E0B244A709E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DA9EEC8-852B-4D30-BA16-5F6FF1C581BC}
 	EndGlobalSection
 EndGlobal
