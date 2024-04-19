@@ -36,10 +36,23 @@ namespace TorcTest.Application.UseCases.Books
             return booksListFiltered;
         }
 
-        public Task<List<string>> GetCategories()
+        public async Task<List<string>> GetCategories()
         {
-            var categories = _ibookrepository.GetCategories();
+            var categories = await _ibookrepository.GetCategories();
             return categories;
+        }
+
+        public async Task<Domain.Entities.Books> GetBookById(int book_id)
+        {
+            var book = await _ibookrepository.GetBookById(book_id);
+            return book;
+        }
+
+        public Task<bool> Update(Domain.Entities.Books book)
+        {
+            var updated = _ibookrepository.Update(book);
+
+            return updated;
         }
     }
 }

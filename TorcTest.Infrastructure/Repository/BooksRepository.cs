@@ -9,6 +9,7 @@ using TorcTest.Application.Repository;
 using TorcTest.Domain.Entities;
 using TorcTest.Infrastructure.ConfigDB;
 using TorcTest.Infrastructure.models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace TorcTest.Infrastructure.Repository
 {
@@ -113,5 +114,62 @@ namespace TorcTest.Infrastructure.Repository
 
             return categories;
         }
+
+
+        public async Task<Domain.Entities.Books> GetBookById(int bookId)
+        {
+            var booksList = new List<Domain.Entities.Books>();
+            var book = _apiDbContext.Books.Where(book => book.Book_Id == bookId).First();
+
+            if (book == null)
+                return null;
+
+            var bookDomain = new Domain.Entities.Books
+            {
+                BookId = book.Book_Id,
+                Tittle = book.Tittle,
+                FirstName = book.First_Name,
+                LastName = book.Last_Name,
+                TotalCopies = book.Total_Copies,
+                CopiesInUse = book.Copies_in_use,
+                Type = book.Type,
+                Isbn = book.Isbn,
+                Category = book.Category
+            };
+
+            return bookDomain;
+        }
+
+        public async Task<bool> Update(Domain.Entities.Books book)
+        {
+
+            var bookToUpdate = _apiDbContext.Books.FirstOrDefault(b => b.Book_Id == book.BookId);
+            if (book == null)
+                return false;
+
+
+            bookToUpdate.Book_Id = book.BookId;
+            bookToUpdate.Tittle = book.Tittle;
+            bookToUpdate.First_Name = book.FirstName;
+            bookToUpdate.Last_Name = book.LastName;
+            bookToUpdate.Total_Copies = book.TotalCopies;
+            bookToUpdate.Copies_in_use = book.CopiesInUse;
+            bookToUpdate.Type = book.Type;
+            bookToUpdate.Isbn = book.Isbn;
+            bookToUpdate.Category = book.Category;
+
+
+            _apiDbContext.Books.Update(bookToUpdate);
+
+            var updated = await _apiDbContext.SaveChangesAsync();
+
+            if (updated != 0)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }

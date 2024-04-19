@@ -31,5 +31,23 @@ namespace WebApp.Services
             client.Dispose();
             return response;
         }
+
+        public HttpResponseMessage GetBookById(int bookId)
+        {
+            var endpoint = urlApi + $"getbooks/byId?bookId={bookId}";
+            var client = new HttpClient();
+            HttpResponseMessage response = client.GetAsync(endpoint).Result;
+            client.Dispose();
+            return response;
+        }
+
+        public HttpResponseMessage Update(Books book)
+        {
+            var endpoint = urlApi + "update";
+            var client = new HttpClient();
+            HttpResponseMessage response = client.PostAsJsonAsync(endpoint, book).Result;
+            client.Dispose();
+            return response;
+        }
     }
 }

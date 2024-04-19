@@ -16,5 +16,9 @@ namespace TorcTest.Application.Repository
         Task<List<string>> GetCategories();
 
         Task<List<Books>> GetBooksByFilter(string searchBy, string searchValue);
+
+        Task<Books> GetBookById(int bookId);
+
+        Task<bool> Update(Books book);
     }
 }

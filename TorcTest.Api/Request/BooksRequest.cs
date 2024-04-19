@@ -4,6 +4,7 @@ namespace TorcTest.Api.Request
 {
     public class BooksRequest
     {
+        public int BookId { get; set; }
         public string Tittle { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

@@ -8,5 +8,9 @@ namespace WebApp.Services
         Task<bool> Create(Books books);
 
         Task<List<Books>> GetBooksByFilter(string SearchBy, string SearchValue);
+
+        Task<Books> GetBookById(int bookId);
+
+        Task<bool> Update(Books book);
     }
 }

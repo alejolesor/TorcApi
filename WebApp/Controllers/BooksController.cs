@@ -48,11 +48,24 @@ namespace WebApp.Controllers
             return RedirectToAction("index");
         }
 
-        public async Task<IActionResult> Filter(string searchBy, string searchValue)
-        {
-            var booksListFiltered = await _booksService.GetBooksByFilter(searchBy, searchValue);
 
-            return View(booksListFiltered);
+
+        public async Task<IActionResult> Edit(int bookId)
+        {
+            var book = await _booksService.GetBookById(bookId);
+            if (book == null)
+            {
+                return View(new Books() {});
+            }
+            return View(book);
+        }
+
+        public async Task<IActionResult> Update(Books books)
+        {
+            var resultCreate = await _booksService.Update(books);
+
+            return RedirectToAction("index");
+
         }
     }
 }

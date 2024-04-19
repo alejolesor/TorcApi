@@ -68,5 +68,35 @@ namespace TorcTest.Api.Controllers
 
         }
 
+        [HttpGet]
+        [Route("getbooks/byId")]
+        public async Task<IActionResult> GetBooksByFilter(int bookId)
+        {
+            var book = await _IbooksUseCase.GetBookById(bookId);
+            return Ok(book);
+
+        }
+
+        [HttpPost]
+        [Route("update")]
+        public async Task<IActionResult> Update(BooksRequest request)
+        {
+            var book = new Domain.Entities.Books()
+            {
+                BookId = request.BookId,
+                Tittle = request.Tittle,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                TotalCopies = request.TotalCopies,
+                CopiesInUse = request.CopiesInUse,
+                Type = request.Type,
+                Isbn = request.Isbn,
+                Category = request.Category,
+            };
+            var result = await _IbooksUseCase.Update(book);
+            return Ok(result);
+
+        }
+
     }
 }

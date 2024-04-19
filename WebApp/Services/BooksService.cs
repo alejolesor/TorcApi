@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Buffers;
 using WebApp.Models;
 
 namespace WebApp.Services
@@ -50,6 +51,35 @@ namespace WebApp.Services
             books = JsonConvert.DeserializeObject<List<Books>>(json);
 
             return books;
+        }
+
+        public async Task<Books> GetBookById(int bookId)
+        {
+            _restClient = new RestClient();
+            var response = _restClient.GetBookById(bookId);
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("There was an Error");
+                return null;
+            }
+            var json = await response.Content.ReadAsStringAsync();
+            Books book = null;
+            book = JsonConvert.DeserializeObject<Books>(json);
+
+            return book;
+        }
+
+        public async Task<bool> Update(Books book)
+        {
+            _restClient = new RestClient();
+            var response = _restClient.Update(book);
+            var resp = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("There was an Error");
+                return false;
+            }
+            return true;
         }
     }
 }
