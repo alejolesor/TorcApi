@@ -1,3 +1,25 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'Library')
+BEGIN
+  CREATE DATABASE Library;
+END;
+GO
+
+use Library;
+
+create table books (
+  book_id INT PRIMARY KEY IDENTITY (1, 1),
+  title Varchar(100) not null,
+    first_name VARCHAR (50) NOT NULL,
+    last_name VARCHAR (50) NOT NULL,
+   total_copies int not null default 0,
+   copies_in_use int not null default 0,
+   type varchar(50),
+   isbn varchar (80),
+   category varchar(50));
+
+
+      delete  from books;
+
 INSERT INTO books (title, first_name, last_name, total_copies, copies_in_use, type, isbn, category)
 VALUES ('Pride and Prejudice', 'Jane', 'Austen', 100, 80, 'Hardcover', '1234567891', 'Fiction');
 
