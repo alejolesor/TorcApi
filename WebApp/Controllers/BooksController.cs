@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Buffers;
+using System.Security.Cryptography.Xml;
 using WebApp.Models;
 using WebApp.Services;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -20,10 +21,17 @@ namespace WebApp.Controllers
             if (searchBy != null && searchValue != null)
             {
                 var booksListFiltered = await _booksService.GetBooksByFilter(searchBy, searchValue);
+                if (booksListFiltered == null) {
+                    return View(new List<Books>() { new Books() { } });
+                }
                 return View(booksListFiltered);
             }
             else {
                 var booksList = await _booksService.GetBooksAsync();
+                if (booksList == null)
+                {
+                    return View(new List<Books>() { new Books() { } });
+                }
                 return View(booksList);
             }
         }
