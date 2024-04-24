@@ -19,5 +19,9 @@ namespace TorcTest.Application.UseCases.Books
         Task<Domain.Entities.Books> GetBookById(int book_id);
 
         Task<bool> Update(Domain.Entities.Books book);
+
+        void UpdateSuscriptor(object sender, Domain.Entities.Books book);
+
+        public event EventHandler<Domain.Entities.Books> BooksChanged;
     }
 }

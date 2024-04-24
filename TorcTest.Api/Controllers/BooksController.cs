@@ -93,6 +93,10 @@ namespace TorcTest.Api.Controllers
                 Isbn = request.Isbn,
                 Category = request.Category,
             };
+
+
+            _IbooksUseCase.BooksChanged += _IbooksUseCase.UpdateSuscriptor;
+
             var result = await _IbooksUseCase.Update(book);
             return Ok(result);
 

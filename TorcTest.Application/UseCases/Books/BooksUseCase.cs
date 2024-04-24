@@ -32,7 +32,7 @@ namespace TorcTest.Application.UseCases.Books
 
         public async Task<List<Domain.Entities.Books>> GetBooksByFilter(string searchBy, string searchValue)
         {
-           var booksListFiltered = await _ibookrepository.GetBooksByFilter(searchBy, searchValue);
+            var booksListFiltered = await _ibookrepository.GetBooksByFilter(searchBy, searchValue);
             return booksListFiltered;
         }
 
@@ -48,11 +48,27 @@ namespace TorcTest.Application.UseCases.Books
             return book;
         }
 
-        public Task<bool> Update(Domain.Entities.Books book)
+        public async Task<bool> Update(Domain.Entities.Books book)
         {
-            var updated = _ibookrepository.Update(book);
+            if (book != null)
+            {
+                BooksChanged.Invoke(this, book);
+                return await _ibookrepository.Update(book);
+            }
+           
 
-            return updated;
+            return false;
         }
+
+        public event EventHandler<Domain.Entities.Books> BooksChanged;
+
+        public void UpdateSuscriptor(object sender, Domain.Entities.Books book)
+        {
+            Console.WriteLine("request updated here we put the new update in an message Broker to apply even sourcing or exucute subtask");
+
+        }
+
     }
+
+        
 }
