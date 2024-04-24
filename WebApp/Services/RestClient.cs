@@ -49,5 +49,14 @@ namespace WebApp.Services
             client.Dispose();
             return response;
         }
+
+        public HttpResponseMessage Delete(int bookId)
+        {
+            var endpoint = urlApi + $"delete?bookId={bookId}";
+            var client = new HttpClient();
+            HttpResponseMessage response = client.DeleteAsync(endpoint).Result;
+            client.Dispose();
+            return response;
+        }
     }
 }

@@ -171,5 +171,21 @@ namespace TorcTest.Infrastructure.Repository
             return false;
         }
 
+        public async Task<bool> Delete(int bookId)
+        {
+            var bookToDelete = _apiDbContext.Books.FirstOrDefault(b => b.Book_Id == bookId);
+
+            if (bookToDelete != null)
+            {
+                _apiDbContext.Books.Remove(bookToDelete);
+
+                _apiDbContext.SaveChanges();
+
+                return true;
+            }
+
+            return false;
+            
+        }
     }
 }

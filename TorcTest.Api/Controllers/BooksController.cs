@@ -102,5 +102,14 @@ namespace TorcTest.Api.Controllers
 
         }
 
+        [HttpDelete]
+        [Route("delete")]
+        public async Task<IActionResult> Delete(int bookId)
+        {
+            var booksList = await _IbooksUseCase.Delete(bookId);
+            return Ok(booksList);
+
+        }
+
     }
 }

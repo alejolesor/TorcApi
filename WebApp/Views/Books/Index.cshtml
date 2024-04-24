@@ -109,7 +109,7 @@
                 <td>
                     <input class="btn btn-primary" type="button" value="Edit" onclick="location.href='@Url.Action("Edit", "Books", new { bookId = item.BookId})'" />
                     <input class="btn btn-info" type="button" value="Details" onclick="location.href='@Url.Action("Details", "Books")'" />
-                    <input class="btn btn-danger" type="button" value="Delete" onclick="location.href='@Url.Action("Delete", "Books")'" />
+                    <input class="btn btn-danger" type="button" value="Delete" onclick="location.href='@Url.Action("DeleteItem", "Books", new { bookId = item.BookId})'" />
                 </td>
             </tr>
         }

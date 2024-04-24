@@ -23,5 +23,7 @@ namespace TorcTest.Application.UseCases.Books
         void UpdateSuscriptor(object sender, Domain.Entities.Books book);
 
         public event EventHandler<Domain.Entities.Books> BooksChanged;
+
+        Task<bool> Delete(int bookId);
     }
 }

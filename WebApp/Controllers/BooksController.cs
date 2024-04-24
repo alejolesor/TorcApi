@@ -67,5 +67,18 @@ namespace WebApp.Controllers
             return RedirectToAction("index");
 
         }
+
+        public IActionResult Details()
+        {
+            return View();
+        }
+
+        public IActionResult DeleteItem(int bookId)
+        {
+            _booksService.Delete(bookId);
+
+            return RedirectToAction("index");
+
+        }
     }
 }

@@ -68,6 +68,11 @@ namespace TorcTest.Application.UseCases.Books
 
         }
 
+        public Task<bool> Delete(int bookId)
+        {
+           var result = _ibookrepository.Delete(bookId);
+            return result;
+        }
     }
 
         

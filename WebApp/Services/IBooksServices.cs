@@ -12,5 +12,7 @@ namespace WebApp.Services
         Task<Books> GetBookById(int bookId);
 
         Task<bool> Update(Books book);
+
+        Task<bool> Delete(int bookId);
     }
 }

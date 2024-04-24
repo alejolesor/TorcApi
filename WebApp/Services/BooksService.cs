@@ -81,5 +81,18 @@ namespace WebApp.Services
             }
             return true;
         }
+
+        public async Task<bool> Delete(int bookId)
+        {
+            _restClient = new RestClient();
+            var response = _restClient.Delete(bookId);
+            var resp = await response.Content.ReadAsStringAsync();
+            if (!response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("There was an Error");
+                return false;
+            }
+            return true;
+        }
     }
 }
